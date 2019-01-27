@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* ###### Header ######*/
+.Top_Bar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  background: #1b1c20;
+}
+
+.Top_Bar .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.Top_Bar .heading span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Top_Bar .heading span a {
+  color: white;
+  text-decoration: none;
+}
+
+.Top_Bar .heading span img {
+  width: 40px;
+}
+
+.Top_Bar .heading span span {
+  margin-left: 5px;
+}
+
+.Top_Bar .Swipe_Fleche {
+  padding-top: 20px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Top_Bar .Swipe_Fleche .Swipe_Button {
+  border: 1px solid #373942;
+  -webkit-transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+  transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  background: #373942 none repeat scroll 0% 0%;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 25px;
+  -webkit-box-shadow: #0003 0px 2px 4px;
+          box-shadow: #0003 0px 2px 4px;
+  color: white;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.Top_Bar .Swipe_Fleche .Swipe_Button span {
+  font-size: 20px;
+  color: white;
+}
+
+.Top_Bar .Swipe_Button:hover {
+  background: grey;
+  opacity: 0.8;
+}
+
+/* ###### Main ######*/
+main {
+  width: 100%;
+  height: calc(100% - 17%);
+  margin: 0;
+  padding: 0;
+}
+
+main .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2b2c31;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+main .swiper-container .swiper-slide .Article {
+  background: #2b2c31;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-transition: traansform 1s ease-in-out;
+  transition: traansform 1s ease-in-out;
+}
+
+main .swiper-container .swiper-slide .Article .round-show {
+  width: 60px;
+  height: 60px;
+  background-color: #00c29a;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+main .swiper-container .swiper-slide .Article #BG {
+  width: 100%;
+  height: 100%;
+}
+
+main .swiper-container .swiper-slide .Article .section {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  z-index: 1;
+}
+
+main .swiper-container .swiper-slide .Article .section .PlayGround {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+main .swiper-container .swiper-slide .Article .section .PlayGround a {
+  width: 40px;
+  height: 40px;
+  background-color: #00c29a;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+main .swiper-container .swiper-slide .Article .section .PlayGround a img {
+  width: 50%;
+}
+
+main .swiper-container .swiper-slide .Article .section .caption {
+  padding-left: 15px;
+  line-height: 1em;
+  text-align: left;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+main .swiper-container .swiper-slide .Article .section .caption span {
+  font-size: 15px;
+}
+
+main .swiper-container .swiper-slide .Quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  background-image: url(../Images/quote-left-90.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+main .swiper-container .swiper-slide .hoverr {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .swiper-container .swiper-slide .hoverr .round-show {
+  width: 60px;
+  height: 60px;
+  background-color: #00c29a;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 9.5px;
+  margin-top: 12px;
+}
+
+main .swiper-container .swiper-slide .hoverr:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* ###### Footer ######*/
+.Bottom_Bar {
+  bottom: 0;
+  height: 8%;
+  background-color: #1b1c20;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.Bottom_Bar .heading-Down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.Bottom_Bar .heading-Down span img {
+  width: 110px;
+  margin: 10px 10px 0px 20px;
+}
+
+.Bottom_Bar .heading-Down .Right_Link {
+  position: relative;
+  margin-left: auto;
+  font-size: 10px;
+  color: white;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Bottom_Bar .heading-Down .Right_Link a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 496px) {
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .caption span {
+    font-size: 10px;
+  }
+  .Quote h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .Right_Link h1 {
+    padding: 3px;
+    font-size: 15px;
+  }
+  .Bottom_Bar .heading-Down span a img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .caption span {
+    font-size: 10px;
+  }
+  .Quote h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .Right_Link h1 {
+    padding: 3px;
+    font-size: 15px;
+  }
+  .Bottom_Bar .heading-Down span a img {
+    width: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,358 @@
+
+
+*{
+    margin: 0;
+}
+
+html , body{
+    height: 100%;
+    position: relative;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+/* ###### Header ######*/
+.Top_Bar{   
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    flex: auto;
+    background: #1b1c20;
+    
+    .heading{
+        display: flex;
+        -moz-box-align: center;
+        align-items: center;
+        justify-content:center;
+        color: white;
+        font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        span{
+            display: flex;
+            align-items: center;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            img{
+                width: 40px;
+            }
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+    .Swipe_Fleche{
+        padding-top: 20px;
+        margin-left: auto;
+        display: flex;
+        .Swipe_Button{
+            border: 1px solid #373942; 
+            transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+            font-size: 15px;
+            position: relative;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            background: #373942 none repeat scroll 0% 0%;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 25px;
+            box-shadow: #0003 0px 2px 4px;
+            color: white;
+            cursor: pointer;
+                cursor: pointer;
+                span{
+                    font-size: 20px;
+                    color: white;
+                }
+        }
+    }
+    .Swipe_Button:hover{
+        background: grey;
+        opacity: 0.8;
+    }
+}
+
+/* ###### Main ######*/
+
+
+main
+{
+    width: 100%;
+    height: calc(100% - 17%);
+    margin:0;
+    padding: 0;
+    .swiper-container 
+    {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2b2c31;
+        margin-top: 0;
+        margin-bottom: 0;
+        .swiper-slide
+        {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: 50%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            cursor: pointer;
+            .Article{
+                background: #2b2c31;
+                width:100%;
+                height:100%;
+                color: white;
+                display: flex;
+                align-items: end;
+                transition: traansform 1s ease-in-out;
+                                        .round-show{
+                            width: 60px;
+                            height: 60px;
+                            background-color: #00c29a;
+                            border-radius: 100%;
+                            position: absolute;
+                            z-index: 10;
+                        }
+                #BG{
+                    width: 100%;
+                    height:100%;
+                }
+                .section{
+                    height: auto;
+                    width: auto;
+                    display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    transition: all .3s ease-in-out;
+                    position: absolute;
+                    z-index: 1;
+                    .PlayGround{
+                        text-align: center;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        padding: 0;
+                        margin: 0;
+
+                        a {
+                           width: 40px;
+                           height: 40px;
+                           background-color: #00c29a;
+                           border-radius: 100%;
+                           display:flex;
+                           align-content: center;
+                           justify-content: center;
+                           align-items: center;
+                           justify-items: center;
+                           padding: 0;
+                           cursor: pointer;
+                           z-index: 10;
+                           img{
+                               width: 50%;
+
+                           }
+                        }
+                    }
+                    .caption{
+                        padding-left: 15px;
+                        line-height: 1em;
+                        text-align: left;
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                        span{
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+            }
+            .Quote{
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                background-image: url(../Images/quote-left-90.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+            }
+            .hoverr{
+                width: 100%;
+                height: 100%;
+                z-index:0;
+                position: absolute;
+                transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-content: center;
+                align-items: center;
+                .round-show{
+                    width: 60px;
+                    height: 60px;
+                    background-color: #00c29a;
+                    border-radius: 100%;
+                    position: absolute;
+                    margin-left: 9.5px;
+                    margin-top: 12px;
+                }
+            }
+            .hoverr:hover{
+                background-color: black;
+                opacity: 0.5;
+            }
+        }   
+    }   
+}
+
+/* ###### Footer ######*/
+
+.Bottom_Bar{
+    bottom: 0;
+    height: 8%;
+    background-color: #1b1c20;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex: auto;
+    .heading-Down{
+        display: flex;
+        flex:auto;
+        span{
+            img{
+                width: 110px;
+                margin: 10px 10px 0px 20px;
+            }
+        }
+        .Right_Link{
+            position:relative;
+            margin-left:auto;
+            font-size: 10px;
+            color: white;
+            width: auto;
+            display: flex;
+            padding: 15px;
+            cursor: pointer;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 496px)
+{
+    body, html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .caption span{
+       font-size: 10px;
+    }
+
+    .Quote{
+        h1{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    .Right_Link{
+        h1{
+            padding: 3px;
+            font-size: 15px;
+        }
+    }
+    .Bottom_Bar{
+        .heading-Down{
+            span{
+                a{
+                    img{
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    body, html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .caption span{
+       font-size: 10px;
+    }
+
+    .Quote{
+        h1{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+
+
+    .Right_Link{
+        h1{
+            padding: 3px;
+            font-size: 15px;
+        }
+    }
+
+    .Bottom_Bar{
+        .heading-Down{
+            span{
+                a{
+                    img{
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
